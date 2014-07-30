@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Submenu example</title>
+<!-- include submenu styles -->
+<link rel="stylesheet" type="text/css" href="submenu.css"/>
+
+<!-- additional styles for demo content only -->
+<style type="text/css">
+
+body {
+  font-family: Georgia,serif;
+  font-size: 1.25em;
+  color: #909;
+  margin: 3px 9px;
+}
+
+#navigation {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  width: 960px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+}
+
+ul.links {
+  margin: 0;
+  padding: 0;
+}
+
+ul.links li {
+  list-style: none;
+  float: left;
+}
+
+ul.links a {
+  text-decoration: none;
+  color: rgb(152,154,148);
+  display: block;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 10px;
+}
+
+ul.links a:hover {
+  color: #444;
+}
+
+ul.primary-links a {
+  border-right: 1px solid #ddd;
+}
+
+ul.secondary-links a {
+  border-left: 1px solid #ddd;
+}
+
+ul.primary-links {
+  float: left;
+  border-left: 1px solid #ddd;
+}
+
+ul.secondary-links {
+  float: right;
+  border-right: 1px solid #ddd;
+}
+
+.clear-block:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+
+/* hide the submenu container */
+#submenus { display: none }
+
+
+</style>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.submenu.js"></script>
+
+<script type="text/javascript">
+// install submenus
+$(document).ready(function() {
+  $('#submenus').submenu({ target: '#dropdowns' });
+});
+</script>
+
+</head>
+<body>
+
+<!-- declare menus -->
+<div id="navigation" class="clear-block">
+<ul class="links primary-links">
+<li><a href="http://data.worldbank.org/country">By Country</a></li>
+<li><a href="http://data.worldbank.org/topic">By Topic</a></li>
+<li><a href="http://data.worldbank.org/indicator">Indicators</a></li>
+<li><a href="http://datacatalog.worldbank.org">Data Catalog</a></li>
+</ul>
+<ul id="dropdowns" class="links secondary-links">
+<li><a href="#">Initiatives</a></li>
+<li><a href="#">What's New</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Products</a></li>
+</ul>
+</div>
+
+<!-- placeholder content -->
+<h1>Data Site Submenus</h1>
+<p>This project demonstrates how to implement the World Bank's data site submenus, as shown at the top of this page. The right four menus
+are drop-downs designed to work inuitively on both touch screens and mouse UIs. View source for instructions.</p>
+<hr/>
+<p>The rest of the text on this page is trivial.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec urna arcu, vitae gravida tortor. Nam mattis, neque a interdum consectetur, massa odio tristique nisl, id sagittis metus turpis ac tellus. Suspendisse congue faucibus lacus, a tempus orci luctus et. Sed purus elit, consectetur vestibulum tempor suscipit, semper at ligula. Nullam eu lacinia ligula. Vestibulum volutpat ornare tortor, eu consequat enim semper auctor. Etiam eu eros in nibh ullamcorper vestibulum. Ut at ante metus, at congue turpis. Aliquam erat volutpat. Nunc vestibulum consequat euismod. Sed at ligula id felis varius sollicitudin. Phasellus rutrum dictum luctus. Curabitur aliquet faucibus aliquet. Aenean ante velit, interdum vulputate sollicitudin sed, aliquet id ligula. Integer sed arcu ut ligula dictum pharetra. Maecenas commodo ligula in libero lacinia a egestas nibh eleifend.</p>
+<p>Suspendisse ut sem sem. Sed non feugiat sapien. Donec ornare nulla eget lacus fringilla nec dignissim mi fringilla. Etiam massa orci, varius faucibus gravida in, vestibulum quis lectus. Vivamus et ligula at ligula hendrerit mattis ut in est. Praesent vel mi et metus elementum tincidunt. Maecenas mattis fermentum risus, id varius nisl pharetra a. Etiam a malesuada nulla. Morbi commodo, urna non pharetra vehicula, enim enim posuere ligula, nec scelerisque lacus augue eget ante. Cras quis justo commodo lectus porta pellentesque. Etiam purus nibh, commodo quis luctus a, accumsan at turpis. Fusce ut lacus et elit facilisis commodo. Cras elementum bibendum ligula, ut aliquam leo lacinia vitae. Mauris vel tempus elit.</p>
+<p>Proin vel varius urna. Nam id dolor nunc, et tempus purus. Aliquam quis justo metus, ac mollis tortor. Nam eros metus, venenatis tristique sodales nec, ultrices ac elit. Nulla dictum malesuada arcu a tincidunt. Vestibulum luctus iaculis mollis. Aenean in magna ligula. Pellentesque posuere commodo diam eu cursus. Praesent quis nisl dolor, vel lacinia neque. Phasellus vitae lorem neque, ac imperdiet nisl.</p>
+<p>Integer semper semper leo, vitae egestas ipsum condimentum in. Aliquam eget ipsum placerat felis dignissim euismod. Aliquam neque neque, scelerisque eu auctor iaculis, viverra quis est. Vestibulum vel lorem eros, id auctor quam. Morbi sed odio quam, ac accumsan metus. Morbi pharetra augue quis lacus laoreet mollis. Curabitur diam arcu, rutrum nec condimentum sit amet, ullamcorper sed quam. Pellentesque a eros ac lorem egestas tempor quis non dolor.</p>
+<p>Ut sapien ligula, commodo non euismod vitae, vehicula eget odio. Maecenas vulputate erat elit, congue suscipit erat. Suspendisse potenti. Sed bibendum malesuada lectus nec hendrerit. Donec condimentum arcu sed quam dignissim ornare. Quisque tempor nisl eu metus adipiscing in tincidunt augue adipiscing. Mauris scelerisque mattis nulla, ut scelerisque ante varius sit amet. Aenean bibendum tempor porttitor. Aenean aliquam, dui ac ultricies malesuada, elit ipsum dictum neque, sit amet posuere lorem mi porttitor urna. Fusce id nunc quis nunc consequat sollicitudin. Pellentesque eleifend scelerisque luctus. Sed vulputate dapibus mi sed tempus.</p>
+<p>Praesent tincidunt libero non nisl rhoncus a feugiat tortor egestas. Aenean magna massa, volutpat nec luctus a, venenatis ut nulla. Morbi quis lectus tellus, ac porttitor tellus. Donec eleifend gravida lacus, semper luctus nulla gravida id. Aliquam hendrerit mollis ante ac rutrum. Donec nulla ante, gravida nec iaculis ut, varius in nibh. Phasellus varius purus in urna porta ac elementum urna molestie. Donec quis tristique diam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc vitae libero lectus, non volutpat elit.</p>
+<p>Morbi bibendum nulla a nibh lacinia ut posuere dui dictum. Ut hendrerit blandit turpis, at posuere erat scelerisque ac. Mauris dictum rutrum pharetra. Etiam sodales vehicula porta. Donec at sollicitudin nunc. Nulla facilisi. Maecenas placerat, nisi sed luctus lobortis, dolor augue blandit felis, non convallis quam tortor sit amet lectus. Sed commodo venenatis felis quis consequat.</p>
+<p>Mauris mattis libero vitae urna scelerisque posuere. Cras consequat nisl ut justo vehicula semper. Quisque id arcu nibh. Donec porttitor, augue id mattis rutrum, ipsum quam fermentum lectus, quis tempus augue risus nec erat. Sed augue neque, feugiat in pellentesque a, euismod sit amet orci. Etiam consectetur, leo in egestas semper, sapien lacus molestie nisl, at consectetur velit lectus eu justo. Praesent eu volutpat eros.</p>
+
+
+<!-- div to temporarily hold the submenu declaration. Currently this section is automatically generated at http://tim.zognet.net/wb/submenus.php -->
+<div id="submenus">
+<ul submenu=":eq(0)">
+  <li><a href="/about/data-programs">Data Programs</a>
+  <ul class="submenu">
+    <li><a href="http://go.worldbank.org/R2Q4052BB0">Improving Statistical Capacity</a></li>
+    <li><a href="http://siteresources.worldbank.org/ICPEXT/Resources/ICP_2011.html">International Comparison Program &amp; Purchasing Power Parity</a></li>
+    <li><a href="http://www.ihsn.org">International Household Survey Network (IHSN)</a></li>
+    <li><a href="http://www.jedh.org">Joint External Debt Hub</a></li>
+    <li><a href="/ogd">Open Government Data Toolkit</a></li>
+    <li><a href="http://go.worldbank.org/6V603CE490">Quarterly External Debt Statistics</a></li>
+    <li><a href="http://go.worldbank.org/IXK3ZNOFQ0">STATCAP</a></li>
+    <li><a href="http://go.worldbank.org/QJ9L04MLK0">Trust Fund for Statistical Capacity Building</a></li>
+    <li><a href="http://www.virtualstatisticalsystem.org/">Virtual Statistical System (VSS)</a></li>
+  </ul></li>
+  <li><a href="http://microdata.worldbank.org">Microdata</a></li>
+  <li class="long"><a href="http://data.worldbank.org/mdgs">Millennium Development Goals (MDGs)</a></li>
+  <li><a href="https://finances.worldbank.org">Open Finances</a></li>
+  <li><a href="http://www.worldbank.org/projects">Projects &amp; Operations</a></li>
+</ul>
+<ul submenu=":eq(1)">
+  <li><a href="http://twitter.com/worldbankdata">Twitter</a></li>
+  <li><a href="http://blogs.worldbank.org/opendata">Blog</a></li>
+  <li><a href="/news">News</a></li>
+  <li><a href="http://worldbank.tumblr.com">Tumblr</a></li>
+  <li><a href="#">Recent Datasets</a></li>
+</ul>
+<ul submenu=":eq(2)">
+  <li><a href="/about">Get Started</a></li>
+  <li><a href="http://datahelpdesk.worldbank.org">Help Desk</a></li>
+  <li><a href="http://datahelpdesk.worldbank.org/knowledgebase">Knowledge Base</a></li>
+  <li><a href="/about/data-overview">Data Overview</a></li>
+  <li><a href="/about/country-and-lending-groups">Country &amp; Lending Groups</a></li>
+  <li><a href="/about/data-updates-errata">Data Updates &amp; Errata</a></li>
+  <li><a href="/about/open-data-training-modules">Open Data Training Modules</a></li>
+  <li><a href="/developers">For Developers</a></li>
+  <li><a href="/about/development-data-group">Contact</a></li>
+</ul>
+<ul submenu=":eq(3)">
+  <li><a href="http://databank.worldbank.org">Databank</a></li>
+  <li><a href="/apps">Apps</a></li>
+  <li><a href="/products/data-books">Books</a>
+  <div class="submenu">
+<div class="clear-block"><a href="http://data.worldbank.org/products/wdi">World Development Indicators</a>
+<a href="/products/data-books/little-data-book-on-financial-inclusion">Little Data Book on Financial Inclusion</a></div>
+<div class="clear-block"><a href="/products/data-books/little-data-book-on-financial-development">Little Data Book on Financial Development</a>
+<a href="/products/data-books/little-data-book-on-info-communication-tech">Little Data Book on ICT</a></div>
+<div class="clear-block"><a href="/products/data-books/little-data-book">Little Data Book</a>
+<a href="/products/data-books/little-data-book-on-private-sector-dvlpmnt">Little Data Book on Private Sector Development</a></div>
+<div class="clear-block"><a href="/products/data-books/little-data-book-on-gender">Little Data Book on Gender</a>
+<a href="/products/data-books/little-data-book/little-green-data-book">Little Green Data Book</a></div>
+<div class="clear-block"><a href="http://data.worldbank.org/products/atlas">Atlas of Global Development</a>
+<a href="/products/data-books/little-data-book-on-external-debt">Little Book on External Debt</a></div>
+<div class="clear-block"><a href="http://data.worldbank.org/products/ids">International Debt Statistics (IDS)</a>
+<a href="/products/data-books">More...</a></div>
+</div></li>
+  <li><a href="/products/data-portals">Dashboards</a></li>
+  <li><a href="/products/data-visualization-tools">Visualization Tools</a>
+  <ul class="submenu">
+    <li><a href="http://devdata.worldbank.org/DataVisualizer">Data Visualizer</a></li>
+    <li><a href="http://www.google.com/publicdata/overview?ds=d5bncppjof8f9_">Google Public Data Explorer</a></li>
+    <li><a href="http://maps.worldbank.org/">Interactive Maps</a></li>
+  </ul></li>
+  <li class="long"><a href="http://wits.worldbank.org/">World Integrated Trade Solutions (WITS)</a></li>
+  <li><a href="http://wdi.worldbank.org/tables">WDI Tables</a></li>
+  <li class="long"><a href="http://databank.worldbank.org/data/Views/Reports/ReportWidgetCustom.aspx?Report_Name=MDG-Table&Id=c658ae98&inf=n">Millennium Development Goals (MDG) Tables</a></li>
+</ul>
+</div>
+
+</body>
