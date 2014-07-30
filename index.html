@@ -74,9 +74,6 @@ ul.secondary-links {
 }
 
 
-/* hide the submenu container */
-#submenus { display: none }
-
 
 </style>
 
@@ -126,7 +123,10 @@ are drop-downs designed to work inuitively on both touch screens and mouse UIs. 
 <p>Mauris mattis libero vitae urna scelerisque posuere. Cras consequat nisl ut justo vehicula semper. Quisque id arcu nibh. Donec porttitor, augue id mattis rutrum, ipsum quam fermentum lectus, quis tempus augue risus nec erat. Sed augue neque, feugiat in pellentesque a, euismod sit amet orci. Etiam consectetur, leo in egestas semper, sapien lacus molestie nisl, at consectetur velit lectus eu justo. Praesent eu volutpat eros.</p>
 
 
-<!-- div to temporarily hold the submenu declaration. Currently this section is automatically generated at http://tim.zognet.net/wb/submenus.php -->
+<!-- div to temporarily hold the submenu declaration. Currently this section is automatically generated at http://tim.zognet.net/wb/submenus.php
+     Note that submenu.css will hide the submenus <div> to eliminate screen glitches during the page load. If you use a different identifier for
+	 the container, be sure to hide it via CSS.
+-->
 <div id="submenus">
 <ul submenu=":eq(0)">
   <li><a href="/about/data-programs">Data Programs</a>
