@@ -5,6 +5,9 @@
 <!-- include submenu styles -->
 <link rel="stylesheet" type="text/css" href="submenu.css"/>
 
+<!-- include network headers for site name -->
+<link rel="stylesheet" type="text/css" href="http://tgherzog.github.io/wbg-network-headers/network.css"/>
+
 <!-- additional styles for demo content only -->
 <style type="text/css">
 
@@ -13,6 +16,13 @@ body {
   font-size: 1.25em;
   color: #909;
   margin: 3px 9px;
+}
+
+#wbg-site-name {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 #navigation {
@@ -90,6 +100,11 @@ $(document).ready(function() {
 </head>
 <body>
 
+<!-- site name: see http://github.com/tgherzog/wbg-network-headers -->
+<div id="wbg-site-name" class="clear-block">
+<a href="http://data.worldbank.org">Data Site Submenus</a>
+</div>
+
 <!-- declare menus -->
 <div id="navigation" class="clear-block">
 <ul class="links primary-links">
@@ -97,6 +112,7 @@ $(document).ready(function() {
 <li><a href="http://data.worldbank.org/topic">By Topic</a></li>
 <li><a href="http://data.worldbank.org/indicator">Indicators</a></li>
 <li><a href="http://datacatalog.worldbank.org">Data Catalog</a></li>
+<li><a href="http://microdata.worldbank.org">Microdata</a></li>
 </ul>
 <ul id="dropdowns" class="links secondary-links">
 <li><a href="#">Initiatives</a></li>
@@ -107,10 +123,14 @@ $(document).ready(function() {
 </div>
 
 <!-- placeholder content -->
-<h1>Data Site Submenus</h1>
 <p>This project demonstrates how to implement the World Bank's data site submenus, as shown at the top of this page. The right four menus
 are drop-downs designed to work inuitively on both touch screens and mouse UIs. View source for instructions.</p>
+
 <p><a href="http://github.com/tgherzog/wbg-submenus">Get the Code on Github</a></p>
+
+<p>This test page does not implement the standard WBG network headers and footers. Implementation for the headers and footers is
+<a href="http://github.com/tgherzog/wbg-network-headers">documented here</a>. The red bar just above the menus is also documented there.</p>
+
 <hr/>
 <p>The rest of the text on this page is trivial.</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec urna arcu, vitae gravida tortor. Nam mattis, neque a interdum consectetur, massa odio tristique nisl, id sagittis metus turpis ac tellus. Suspendisse congue faucibus lacus, a tempus orci luctus et. Sed purus elit, consectetur vestibulum tempor suscipit, semper at ligula. Nullam eu lacinia ligula. Vestibulum volutpat ornare tortor, eu consequat enim semper auctor. Etiam eu eros in nibh ullamcorper vestibulum. Ut at ante metus, at congue turpis. Aliquam erat volutpat. Nunc vestibulum consequat euismod. Sed at ligula id felis varius sollicitudin. Phasellus rutrum dictum luctus. Curabitur aliquet faucibus aliquet. Aenean ante velit, interdum vulputate sollicitudin sed, aliquet id ligula. Integer sed arcu ut ligula dictum pharetra. Maecenas commodo ligula in libero lacinia a egestas nibh eleifend.</p>
@@ -141,7 +161,6 @@ are drop-downs designed to work inuitively on both touch screens and mouse UIs. 
     <li><a href="http://go.worldbank.org/QJ9L04MLK0">Trust Fund for Statistical Capacity Building</a></li>
     <li><a href="http://www.virtualstatisticalsystem.org/">Virtual Statistical System (VSS)</a></li>
   </ul></li>
-  <li><a href="http://microdata.worldbank.org">Microdata</a></li>
   <li class="long"><a href="http://data.worldbank.org/mdgs">Millennium Development Goals (MDGs)</a></li>
   <li><a href="https://finances.worldbank.org">Open Finances</a></li>
   <li><a href="http://www.worldbank.org/projects">Projects &amp; Operations</a></li>
@@ -151,7 +170,6 @@ are drop-downs designed to work inuitively on both touch screens and mouse UIs. 
   <li><a href="http://blogs.worldbank.org/opendata">Blog</a></li>
   <li><a href="/news">News</a></li>
   <li><a href="http://worldbank.tumblr.com">Tumblr</a></li>
-  <li><a href="#">Recent Datasets</a></li>
 </ul>
 <ul submenu=":eq(2)">
   <li><a href="/about">Get Started</a></li>
